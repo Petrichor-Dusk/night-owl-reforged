@@ -2,11 +2,6 @@
 
 All notable changes to the "night-owl-reforged" extension are documented in this file.
 
-## 2.3.0
-
-- Add an optional editor background image. A Night Owl starfield ships with the extension; `Night Owl Reforged: Enable Background Image` injects it via `workbench.desktop.main.css`, `Use Custom Background Image…` swaps in your own file, and `Disable Background Image` restores the original stylesheet from a pristine backup. Dimming is configurable through `nightOwlReforged.overlayOpacity`.
-- The theme files are untouched by this feature; without running the command nothing changes.
-
 ## 2.2.4
 
 - Revert the 2.2.3 emphasis tweaks. Tab styling is back to exactly the 2.2.2 palette: `tab.activeForeground` `#d6deeb`, `tab.unfocusedActiveForeground` `#89a4bb`, `tab.border` `#122d42` (dark) / `#E0E0E0` (light).
