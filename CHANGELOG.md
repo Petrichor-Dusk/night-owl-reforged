@@ -1,6 +1,16 @@
 # Change Log
 
-All notable changes to the "night-owl" extension are be documented in this file.
+All notable changes to the "night-owl-reforged" extension are documented in this file.
+
+## 2.2.0 — fork baseline
+
+- Active tab is now clearly distinguishable: sets `tab.activeBorderTop` (`#82aaff` dark / `#2AA298` light), which upstream never defined, and replaces the dead `tab.activeBorder` accent.
+- Recesses the tab bar (`editorGroupHeader.tabsBackground` → `#01111d`) and raises active-tab contrast; `tab.activeForeground` aligned with `editor.foreground`.
+- Light themes: inactive tab text is no longer identical to active tab text (`#403f53` → `#7a8181`).
+- Adds missing tab states: `hover`, `selected`, `unfocused*`, `lastPinnedBorder`, `dragAndDropBorder`, `divider`.
+- Renames the extension, themes and publisher so the fork can ship independently.
+
+# Upstream changelog
 
 # "2.1.1
 

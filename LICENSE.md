@@ -1,6 +1,7 @@
 MIT License
 
 Copyright (c) 2018 Sarah Drasner
+Copyright (c) 2026 Petrichoral (Night Owl Reforged fork)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -19,3 +20,10 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+---
+
+This project is a fork of https://github.com/sdras/night-owl-vscode-theme,
+published separately as "Night Owl Reforged". The original copyright notice
+above is preserved as required by the MIT license. Original theme design and
+colour choices: Sarah Drasner.

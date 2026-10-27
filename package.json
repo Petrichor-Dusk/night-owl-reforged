@@ -1,13 +1,17 @@
 {
-  "name": "night-owl",
-  "displayName": "Night Owl",
-  "description": "A VS Code theme for the night owls out there. Now introducing Light Owl theme for daytime usage. Decisions were based on meaningful contrast for reading comprehension and for optimal razzle dazzle. ✨",
-  "version": "2.1.1",
-  "publisher": "sdras",
+  "name": "night-owl-reforged",
+  "displayName": "Night Owl Reforged",
+  "description": "An actively maintained fork of Night Owl — same palette, with tab and workbench states that are actually readable. Night, Light and No-Italics variants included. ✨",
+  "version": "2.2.0",
+  "publisher": "petrichoral",
   "license": "SEE LICENSE IN LICENSE.md",
+  "author": {
+    "name": "Petrichoral",
+    "url": "https://github.com/Petrichor-Dusk"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/sdras/night-owl-vscode-theme"
+    "url": "https://github.com/Petrichor-Dusk/night-owl-reforged"
   },
   "keywords": [
     "Theme",
@@ -28,7 +32,7 @@
     "theme": "dark"
   },
   "engines": {
-    "vscode": "^1.17.0"
+    "vscode": "^1.85.0"
   },
   "categories": [
     "Themes"
@@ -37,22 +41,22 @@
   "contributes": {
     "themes": [
       {
-        "label": "Night Owl",
+        "label": "Night Owl Reforged",
         "uiTheme": "vs-dark",
         "path": "./themes/Night Owl-color-theme.json"
       },
       {
-        "label": "Night Owl (No Italics)",
+        "label": "Night Owl Reforged (No Italics)",
         "uiTheme": "vs-dark",
         "path": "./themes/Night Owl-color-theme-noitalic.json"
       },
       {
-        "label": "Night Owl Light",
+        "label": "Night Owl Reforged Light",
         "uiTheme": "vs",
         "path": "./themes/Night Owl-Light-color-theme.json"
       },
       {
-        "label": "Night Owl Light (No Italics)",
+        "label": "Night Owl Reforged Light (No Italics)",
         "uiTheme": "vs",
         "path": "./themes/Night Owl-Light-color-theme-noitalic.json"
       }

@@ -1,15 +1,36 @@
-# Night Owl 🌌
+# Night Owl Reforged 🌌
 
-![VS Code Marketplace Installs](https://img.shields.io/visual-studio-marketplace/i/sdras.night-owl)
-![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/sdras.night-owl)
-[![Preview in vscode.dev](https://img.shields.io/badge/preview%20in-vscode.dev-blue)](https://vscode.dev/theme/sdras.night-owl)
+![VS Code Marketplace Installs](https://img.shields.io/visual-studio-marketplace/i/petrichoral.night-owl-reforged)
+![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/petrichoral.night-owl-reforged)
 
+A maintained fork of [Night Owl](https://github.com/sdras/night-owl-vscode-theme) by Sarah Drasner. The syntax palette is unchanged — this fork exists to fix the workbench details that have drifted since upstream was last updated, starting with tab states that you can actually read.
 
-A Visual Studio Code theme for the night owls out there. Fine-tuned for those of us who like to code late into the night. Color choices have taken into consideration what is accessible to people with colorblindness and in low-light circumstances. Decisions were also based on meaningful contrast for reading comprehension and for optimal razzle dazzle. ✨
+> Original theme and design by [Sarah Drasner](https://github.com/sdras), MIT licensed — see [LICENSE.md](./LICENSE.md). If you want the upstream theme, install [Night Owl](https://marketplace.visualstudio.com/items?itemName=sdras.night-owl) instead.
 
-As of 1.0.0, there's a Light Owl Theme too! Color balanced from the Dark version for easy viewing in daylight. 🌅
+## What this fork changes
 
-About this theme, and some of the considerations made while creating it (as well as _how_ to create it should you want to make your own): [https://css-tricks.com/creating-a-vs-code-theme/](https://css-tricks.com/creating-a-vs-code-theme/)
+- **The active tab is finally visible.** Upstream relied on `tab.activeBorder`, which modern VS Code no longer renders, so the active tab differed from the others by a barely perceptible shade. It now gets a `#82aaff` accent line (Light Owl: `#2AA298`) plus stronger surface contrast, with the tab bar recessed behind it.
+- **Inactive tab text is dimmed** instead of being the same colour as the active tab (the light themes used `#403f53` for both).
+- **Adds the tab states upstream never defined**: `hover`, `selected`, `unfocused*`, `lastPinnedBorder`, `dragAndDropBorder`, `divider`.
+- All four variants — Night, Night no-italics, Light, Light no-italics — get the same treatment.
+
+### Tab palette (dark)
+
+| token | colour |
+| --- | --- |
+| tab bar background | `#01111d` |
+| active tab | `#0b2942` + `#82aaff` top accent |
+| inactive tab | `#01111d` |
+| hovered tab | `#0b2135` |
+| selected tab in an inactive group | `#0e293f` |
+
+## Upstream theme
+
+Night Owl is a Visual Studio Code theme for the night owls out there. Fine-tuned for those of us who like to code late into the night. Color choices have taken into consideration what is accessible to people with colorblindness and in low-light circumstances. Decisions were also based on meaningful contrast for reading comprehension and for optimal razzle dazzle. ✨
+
+Light Owl is color balanced from the Dark version for easy viewing in daylight. 🌅
+
+About the original theme, and some of the considerations made while creating it (as well as _how_ to create it should you want to make your own): [https://css-tricks.com/creating-a-vs-code-theme/](https://css-tricks.com/creating-a-vs-code-theme/)
 
 ## Night Owl
 
@@ -26,14 +47,14 @@ About this theme, and some of the considerations made while creating it (as well
 1.  Install [Visual Studio Code](https://code.visualstudio.com/)
 2.  Launch Visual Studio Code
 3.  Choose **Extensions** from menu
-4.  Search for `night owl`
+4.  Search for `night owl reforged`
 5.  Click **Install** to install it
 6.  Click **Reload** to reload the Code
-7.  From the menu bar click: Code > Preferences > Color Theme > **Night Owl**
+7.  From the menu bar click: Code > Preferences > Color Theme > **Night Owl Reforged**
 
 ## Disable Italics
 
-If you wish to disable italics, there is now a no-italic theme available. You will have access to both, select **Night Owl No Italics** as your color theme.
+If you wish to disable italics, there is a no-italic theme available. You will have access to both, select **Night Owl Reforged (No Italics)** as your color theme.
 
 ## Other versions
 
