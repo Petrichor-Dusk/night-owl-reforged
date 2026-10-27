@@ -24,6 +24,23 @@ A maintained fork of [Night Owl](https://github.com/sdras/night-owl-vscode-theme
 | hovered tab | `#0b2135` |
 | selected tab in an inactive group | `#0e293f` |
 
+## Optional editor background image
+
+The extension can paint a background image behind the editor. A Night Owl starfield ships inside the extension, and you can swap in your own image.
+
+| Command | What it does |
+| --- | --- |
+| `Night Owl Reforged: Enable Background Image` | Injects the bundled starfield behind the editor |
+| `Night Owl Reforged: Use Custom Background Image…` | Pick any jpg/png/webp/gif; it is copied into the extension's storage and used instead |
+| `Night Owl Reforged: Disable Background Image` | Restores the original workbench stylesheet |
+
+Tune how much the image is dimmed with `nightOwlReforged.overlayOpacity` (0–1, default `0.82`), then re-run *Enable Background Image*.
+
+Two things you should know before using it:
+
+- This works by appending CSS to VS Code's `workbench.desktop.main.css`, because VS Code has no API for UI backgrounds. After the restart, VS Code reports that the installation **appears to be corrupt** — choose **"Don't Show Again"**.
+- A VS Code update replaces that stylesheet, so the background disappears after an update. Re-run *Enable Background Image*. The theme itself is unaffected either way.
+
 ## Upstream theme
 
 Night Owl is a Visual Studio Code theme for the night owls out there. Fine-tuned for those of us who like to code late into the night. Color choices have taken into consideration what is accessible to people with colorblindness and in low-light circumstances. Decisions were also based on meaningful contrast for reading comprehension and for optimal razzle dazzle. ✨

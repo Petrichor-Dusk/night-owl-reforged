@@ -1,10 +1,11 @@
 {
   "name": "night-owl-reforged",
   "displayName": "Night Owl Reforged",
-  "description": "An actively maintained fork of Night Owl — same palette, with tab and workbench states that are actually readable. Night, Light and No-Italics variants included. ✨",
-  "version": "2.2.4",
+  "description": "An actively maintained fork of Night Owl — same palette, with tab and workbench states that are actually readable. Night, Light and No-Italics variants included, plus an optional starfield editor background. ✨",
+  "version": "2.3.0",
   "publisher": "petrichoral",
   "license": "SEE LICENSE IN LICENSE.md",
+  "main": "./extension.js",
   "author": {
     "name": "Petrichoral",
     "url": "https://github.com/Petrichor-Dusk"
@@ -39,6 +40,35 @@
   ],
   "icon": "owl-icon.png",
   "contributes": {
+    "commands": [
+      {
+        "command": "nightOwlReforged.enableBackground",
+        "category": "Night Owl Reforged",
+        "title": "Enable Background Image"
+      },
+      {
+        "command": "nightOwlReforged.useCustomBackground",
+        "category": "Night Owl Reforged",
+        "title": "Use Custom Background Image…"
+      },
+      {
+        "command": "nightOwlReforged.disableBackground",
+        "category": "Night Owl Reforged",
+        "title": "Disable Background Image"
+      }
+    ],
+    "configuration": {
+      "title": "Night Owl Reforged",
+      "properties": {
+        "nightOwlReforged.overlayOpacity": {
+          "type": "number",
+          "default": 0.82,
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Opacity of the dimming layer painted over the background image. Higher means a darker image and more readable code. Re-run \"Enable Background Image\" after changing it."
+        }
+      }
+    },
     "themes": [
       {
         "label": "Night Owl Reforged",
