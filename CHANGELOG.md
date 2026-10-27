@@ -2,6 +2,19 @@
 
 All notable changes to the "night-owl-reforged" extension are documented in this file.
 
+## 2.2.3
+
+- Make the active tab read at a glance without touching any background: `tab.activeForeground` is now `#ffffff`, `tab.unfocusedActiveForeground` no longer dims to `#89a4bb`, and `tab.border` matches the strip so the `#82aaff` accent line is the only line in the tab bar.
+
+## 2.2.2
+
+- Move the accent to `tab.activeBorder`. VS Code 1.143's connected-tabs renderer ignores `tab.activeBorderTop` and `tab.activeBackground` for the active tab — the active tab inherits the editor background and only the `tab.activeBorder` line is drawn, so that key now carries the `#82aaff` / `#2AA298` accent.
+- Darken the tab bar (`#010e18`) and add `editorGroupHeader.connectedTabsBackground`, so the active tab reads against the strip even when the accent is not rendered.
+
+## 2.2.1
+
+- Add the `modernEditorTab.*` colors. VS Code's newer tab renderer paints the active tab from `modernEditorTab.activeBackground` rather than `tab.activeBackground`, so a theme that only sets the classic keys leaves the active tab looking exactly like the tab bar.
+
 ## 2.2.0 — fork baseline
 
 - Active tab is now clearly distinguishable: sets `tab.activeBorderTop` (`#82aaff` dark / `#2AA298` light), which upstream never defined, and replaces the dead `tab.activeBorder` accent.
