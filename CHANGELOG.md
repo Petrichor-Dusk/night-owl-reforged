@@ -2,6 +2,10 @@
 
 All notable changes to the "night-owl-reforged" extension are documented in this file.
 
+## 2.2.4
+
+- Revert the 2.2.3 emphasis tweaks. Tab styling is back to exactly the 2.2.2 palette: `tab.activeForeground` `#d6deeb`, `tab.unfocusedActiveForeground` `#89a4bb`, `tab.border` `#122d42` (dark) / `#E0E0E0` (light).
+
 ## 2.2.3
 
 - Make the active tab read at a glance without touching any background: `tab.activeForeground` is now `#ffffff`, `tab.unfocusedActiveForeground` no longer dims to `#89a4bb`, and `tab.border` matches the strip so the `#82aaff` accent line is the only line in the tab bar.
